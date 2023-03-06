@@ -49,6 +49,7 @@ body{
                     text-align: center;
                     font-size: 24px;
                     font-weight: 600;
+                    text-shadow: -18px 8px 18px #b4bbbb;    
                 }
     
 .contenedor{
@@ -87,13 +88,19 @@ body{
                 font-size: 60px;
                 margin-top: 1.7em;
                 margin-bottom: 1em;
+                letter-spacing: 1.2rem;
+                text-shadow: -18px 8px 18px #0c3f3f;
                 
             }
             .subtitulo{
                 margin-bottom: 1em;
+                letter-spacing: 0.5rem;
+                text-shadow: -18px 8px 18px #b4bbbb;
             }
             .parrafo{
                 margin-bottom: 1em;
+                letter-spacing: 0.3rem;
+                text-shadow: -18px 8px 18px #b4bbbb;
             }
 
             /* Seccion de waifus */
@@ -121,10 +128,6 @@ body{
             
           
         }
-
-
-
-
         @keyframes rainbow {
             0% {
               background-position: 0% 50%;
@@ -136,3 +139,63 @@ body{
               background-position: 0% 50%;
             }
           }
+
+
+
+/* MEDIA QUERYS HEASJ */
+
+@media (max-width: 600px) {
+    .hero{
+        grid-template-columns: 200px 1fr;
+        align-items: center;
+    }
+    .cont-logo{
+        justify-content: flex-start;
+    }
+        .logo{
+            width: 80%;
+            height: auto;
+        }
+    .nav{
+        height: 70px;
+        justify-content: center;
+    }
+    .cajas{
+        padding: 0;
+        align-self: center;
+        margin: 0.8em;
+    }
+        a{
+            text-align: center;
+            font-size: 18px;
+        }
+
+    .contenedor{
+
+    }
+    .cont-portada{
+        background-size: 500px 600px;
+
+    }
+        .cont-letras{
+            margin: 100px 0px 0px 10px;
+            color: whitesmoke;
+            align-items: center;
+            letter-spacing: 0;
+            
+        }
+        .titulo{
+            text-align: center;
+            letter-spacing: 1rem;
+            text-shadow: -18px 8px 18px black;
+            
+        }
+        .subtitulo{
+            text-shadow: -18px  2px 12px black;
+        }
+        .parrafo{
+            text-align: center;
+            text-shadow: -18px 2px 12px black;
+            color: white;
+        }
+}
