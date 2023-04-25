@@ -3,7 +3,8 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'montserrat', Courier, monospace;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
 }
 body{
     
@@ -12,6 +13,7 @@ body{
 
 .hero{
     width: 100%;
+    height: 8vh;
     position: fixed;
     display: grid;
     grid-template-columns: 600px 1fr;
@@ -21,17 +23,20 @@ body{
     .cont-logo{
         display: flex;
         flex-flow: row nowrap;
-        justify-content: center;
+        justify-content: flex-start;
+        margin-left: 2rem;
+        height: 8vh;
     }
         .logo{
-            width: 30%;
+            width: 20%;
             height: auto;
         }
     .nav{
         display: flex;
         flex-flow: row nowrap;
-        justify-content: center;
-        height: 100px;
+        justify-content: flex-end;
+        margin-right: 2.5rem;
+        height: 8vh;
         
     }
         .cajas{
@@ -50,10 +55,13 @@ body{
                     color: whitesmoke;
                     text-align: center;
                     font-size: 24px;
-                    font-weight: 600;
-                    text-shadow: -18px 8px 18px #b4bbbb;    
+                    font-family: 'roboto';
+                    font-weight: 200;
+                    /* text-shadow: -18px 8px 18px #b4bbbb;     */
                 }
     
+
+/* Body */
 .contenedor{
     width: 100%;
     margin: 0 auto;
@@ -62,48 +70,116 @@ body{
     flex-flow: column nowrap;
 
 }
+    .prueba{
+        background-color: #3c0137;
+    }
     .cont-portada{
         width: 100%;
-        align-self: center;
         height: 750px;
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column wrap;
         
         background-image: url("waifus/portada.webp");
-        background-size: 800px 600px;
+        background-size: 650px 450px;
         background-repeat: no-repeat;
-        background-position: right;
+        background-position: left;
         background-color: #EEA9E7;
+        justify-content: flex-start;
 
-        justify-content: center;
     }
         .cont-letras{
-            margin: 165px 500px 0px 0px;
-            height: min-content;
             display: flex;
+            width: fit-content;
             flex-flow: column wrap;
-            align-items: flex-start;
-            color: whitesmoke;
+            color: azure;
+            /* background-color: lightblue; */
+            /* opacity: 0.8; */
+            font-size: 72px;
+            padding-top: 5.5rem;
+            text-shadow: #eb9fe4 2px 2px 2px;
+            border-radius: 10%;
+            box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+            padding-right: 3rem;
+            padding-bottom: 4rem;
+
         }
-            .titulo{
-                text-align: left;
-                font-size: 60px;
-                margin-top: 1.7em;
-                margin-bottom: 1em;
-                letter-spacing: 1.2rem;
-                text-shadow: -18px 8px 18px #0c3f3f;
+        .letras-titulo{
+                /* background-color: red; */
+                margin-bottom: 5px;
+                width: 100%;
+                padding-left: 10rem;
                 
             }
-            .subtitulo{
-                margin-bottom: 1em;
-                letter-spacing: 0.5rem;
-                text-shadow: -18px 8px 18px #b4bbbb;
+            .letras-subtitulo{
+                
+                /* background-color: blue; */
+                margin-bottom: 5px;
+                width: 100%;
+                padding-right: 0rem;
+                padding-left: 15rem;
+                
+
             }
-            .parrafo{
-                margin-bottom: 1em;
-                letter-spacing: 0.3rem;
-                text-shadow: -18px 8px 18px #b4bbbb;
+            .letras-parrafo{
+                /* text-align: right; */
+                /* background-color: green; */
+                width: 100%;
+                padding-left: 5rem;
+                color: #3c0137;
+                margin-top: 13rem;
+                font-size: 90px;
+            
             }
+        .cont-waifu2{
+            display: flex;
+            flex-flow: row wrap;
+            padding: 5rem 0 0 0;
+            margin-right: 22rem;
+        }
+            .cont-img-waifu2{
+            }
+                .img-waifu2-cont{
+
+                }
+            .texto-cont-waifu2{
+                height: max-content;
+                display: flex;
+                flex-flow: column nowrap;
+                font-size: 30px;
+                color: azure;
+                text-shadow: #573b54 2px 2px 2px;
+                margin-left: -18rem;
+                background-image: url("waifus/kanna-removebg-preview.png");
+                background-repeat: no-repeat;
+                background-size: 300px 300px;
+                background-position-x: 270px;
+                background-position-y: 300px;
+                }
+                .slogan1{
+
+                }
+                .slogan2{
+                    margin-top: 20px;
+                    margin-left: 2rem;
+                }
+                .slogan3{
+                    margin-top: 2rem;
+                    margin-left: 4rem;
+                }
+                .slogan4{
+                    margin-top: 2rem;
+                    margin-left: 6.5rem;
+                }
+                .slogan5{
+                    margin-top: 2rem;
+                    margin-left: 8rem;
+                }
+                .slogan6{
+                    margin-top: 15rem;
+                    margin-left: 12rem;
+                    color: #6c4169;
+                    letter-spacing: 2px;
+                }
 
             /* Seccion de waifus */
     .section{
@@ -115,18 +191,22 @@ body{
         background-color: #D698D0;
     }
         .cont-waifus{
+            display: flex;
+            flex-flow: row nowrap;
             margin: 3em;
             height: 300px;
             width: 300px;
             border: 2px solid transparent;
-            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            border-radius: 45%;
+            background: linear-gradient(to right, yellow, green, blue, indigo, violet);
             background-size: 1200% 100%;
-            animation: rainbow 10s ease infinite;
+            animation: rainbow 5s ease infinite;
         }
         
         .img-waifu{
-            width: 90%;
-            border-radius: 10px;
+            margin-left: -0.78rem;
+            margin-bottom: 7px;
+            width: 110%;
             
           
         }
@@ -206,6 +286,10 @@ body{
     .cajas{
         padding: 0;
         align-self: center;
-        margin: 0.3em;
+        margin: 0.2em;
     }
 }
+
+
+
+E
